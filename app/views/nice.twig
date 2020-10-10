@@ -1,0 +1,21 @@
+{% extends "layouts/page.twig" %}
+{% block body %}
+<section>
+    <div style="padding: 20px;">
+        <h1>
+            Accesso consentito!
+        </h1>
+        <p>
+            Benvenuto/a, {{data.name}}!<br>
+            Clicca sul bottone qui sotto per accedere al gruppo!
+        </p>
+        <div style="text-align: center">
+            <a href="https://t.me/inginfo_fetcher_bot?start={{user_id}}">
+                <button>
+                    Entra nel gruppo
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

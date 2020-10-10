@@ -1,0 +1,21 @@
+{% extends "layouts/page.twig" %}
+{% block body %}
+<section>
+    <div style="padding: 20px;">
+        <h1>
+            Sei già registrato!
+        </h1>
+        <p>
+            Non c'è bisogno di rieffettuare questo procedimento, clicca sul pulsante sotto per continuare, oppure scrivi su Telegram a @inginfo_fetcher_bot il seguente comando:<br>
+            <pre style="color: white; text-align: center; margin: 0 auto;">/start {{user_id}}</pre>
+        </p>
+        <div style="text-align: center">
+            <a href="https://t.me/inginfo_fetcher_bot?start={{user_id}}" style="text-decoration: none">
+                <button>
+                    Entra nel gruppo
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

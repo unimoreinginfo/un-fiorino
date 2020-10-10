@@ -1,0 +1,25 @@
+{% extends "layouts/page.twig" %}
+{% block body %}
+<section>
+    <div style="padding: 20px;">
+        <h1>
+            <blockquote>
+                Alt! Chi siete? Cosa portate? Sì, ma quanti siete? Un fiorino.
+            </blockquote>
+        </h1>
+        <p>
+            Per poter accedere al gruppo Telegram devi prima verificare le tue credenziali Unimore.<br>
+            Dopo aver cliccato sul bottone qui sotto, accedi con username e password che utilizzi su <b>Esse3</b>.
+            Le informazioni riguardanti i dati raccolti possono essere trovate <a href="/privacy">qui</a>.<br>
+            Il codice sorgente del progetto è disponibile <a href="https://github.com/unimoreinginfo/un-fiorino">qui</a>.
+            <br><br>
+            Idea scopiazzata da quel genio di <a href="https://github.com/Steffo99/thor">Steffo99</a>.
+        </p>
+        <div style="text-align: center">
+            <button onclick="location.href='/login/{{state}}'">
+                Verifica la tua identità
+            </button>
+        </div>
+    </div>
+</section>
+{% endblock %}
